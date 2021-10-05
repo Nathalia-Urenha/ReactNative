@@ -5,13 +5,17 @@ import {View, StyleSheet} from 'react-native';
 //import MinMax from './components/MinMax';
 //import Aleatorio from './components/Aleatorio';
 //import Titulo from './components/Titulo';
-import Botao from './components/Botao';
+//import Botao from './components/Botao';
+import Contador from './components/Contador';
 
 //componente baseado em função
 export default () => (
   <View style={style.App}>
+    <Contador inicial={100} passo={13} />
+    <Contador />
+    {/*
     <Botao />
-    {/*<Titulo
+    <Titulo
       principal="Cadastro Produto"
       secundario="Tela de Cadastro do produto"
     />
