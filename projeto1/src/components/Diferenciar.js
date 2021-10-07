@@ -8,6 +8,6 @@ export default _ => {
   } else if (Platform.OS === 'ios') {
     return <Text style={Estilo.txtG}>IOS</Text>;
   } else {
-    return <Text style={Estilo.txtG}>Eita!!!</Text>;
+    return <Text style={Estilo.txtG}>{Platform.OS}</Text>;
   }
 };

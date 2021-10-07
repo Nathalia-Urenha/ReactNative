@@ -1,5 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+
 //import Primeiro from './components/Primeiro';
 //import X, {Comp1, Comp2} from './components/Multi';
 //import MinMax from './components/MinMax';
@@ -10,13 +11,35 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import Pai from './components/direta/Pai';
 //import Pai from './components/indireta/Pai';
 //import ContadorV2 from './components/contador/ContadorV2';
-import Diferenciar from './components/Diferenciar';
+//import Diferenciar from './components/Diferenciar';
+//import ParImpar from './components/ParImpar';
+//import Pai from './components/relacao/Pai';
+//import Filho from './components/relacao/Filho';
+import UsuarioLogado from './components/UsuarioLogado';
 
 //componente baseado em função
 export default () => (
   <SafeAreaView style={style.App}>
-    <Diferenciar />
+    <UsuarioLogado
+      usuario={{nome: 'Nathalia', email: 'naty.urenha@gmail.com'}}
+    />
+    <UsuarioLogado usuario={{nome: 'Ana'}} />
+    <UsuarioLogado usuario={{email: 'igorsolfaromero@gmail.com'}} />
+    <UsuarioLogado usuario={null} />
+    <UsuarioLogado usuario={{}} />
+
     {/*
+    <Pai>
+      <Filho nome="Nathalia" sobrenome="Urenha" />
+      <Filho nome="Igor" sobrenome="Romero" />
+    </Pai>
+
+    <Pai>
+      <Filho nome="Aurora" sobrenome="Urenha Romero" />
+      <Filho nome="Igor" sobrenome="Urenha Romero Junior" />
+    </Pai>
+    <ParImpar num={3} />
+    <Diferenciar />
     <ContadorV2 />
     <Pai />
     <Contador inicial={100} passo={13} />
