@@ -15,12 +15,15 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import ParImpar from './components/ParImpar';
 //import Pai from './components/relacao/Pai';
 //import Filho from './components/relacao/Filho';
-import UsuarioLogado from './components/UsuarioLogado';
+//import UsuarioLogado from './components/UsuarioLogado';
+import ListaProdutos from './components/produtos/ListaProdutos';
 
 //componente baseado em função
 export default () => (
   <SafeAreaView style={style.App}>
-    <UsuarioLogado
+    <ListaProdutos />
+    {/*
+     <UsuarioLogado
       usuario={{nome: 'Nathalia', email: 'naty.urenha@gmail.com'}}
     />
     <UsuarioLogado usuario={{nome: 'Ana'}} />
@@ -28,7 +31,6 @@ export default () => (
     <UsuarioLogado usuario={null} />
     <UsuarioLogado usuario={{}} />
 
-    {/*
     <Pai>
       <Filho nome="Nathalia" sobrenome="Urenha" />
       <Filho nome="Igor" sobrenome="Romero" />
