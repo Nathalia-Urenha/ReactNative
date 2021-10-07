@@ -8,13 +8,15 @@ import {View, StyleSheet} from 'react-native';
 //import Botao from './components/Botao';
 //import Contador from './components/Contador';
 //import Pai from './components/direta/Pai';
-import Pai from './components/indireta/Pai';
+//import Pai from './components/indireta/Pai';
+import ContadorV2 from './components/contador/ContadorV2';
 
 //componente baseado em função
 export default () => (
   <View style={style.App}>
-    <Pai />
+    <ContadorV2 />
     {/*
+    <Pai />
     <Contador inicial={100} passo={13} />
     <Contador />
     <Botao />
