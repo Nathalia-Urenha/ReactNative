@@ -18,13 +18,20 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import UsuarioLogado from './components/UsuarioLogado';
 //import ListaProdutos from './components/produtos/ListaProdutos';
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
-import DigiteSeuNome from './components/DigiteSeuNome';
+//import DigiteSeuNome from './components/DigiteSeuNome';
+//import FlexboxV1 from './components/layout/FlexboxV1';
+//import FlexboxV2 from './components/layout/FlexboxV2';
+//import FlexboxV3 from './components/layout/FlexboxV3';
+import FlexboxV4 from './components/layout/FlexboxV4';
 
 //componente baseado em função
 export default () => (
   <SafeAreaView style={style.App}>
-    <DigiteSeuNome />
+    <FlexboxV4 />
     {/*
+    <FlexboxV2 />
+    <FlexboxV1 />
+    <DigiteSeuNome />
     <ListaProdutosV2 />
     <ListaProdutos />
      <UsuarioLogado
